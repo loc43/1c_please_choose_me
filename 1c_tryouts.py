@@ -17,7 +17,8 @@ for i in range(m):
     a = int(tmp1[0])
     b = int(tmp1[1])
     array[a].append(b)
-    array[b].append(a)
+    if b != a:
+        array[b].append(a)
 
 timer = time.time()
 
